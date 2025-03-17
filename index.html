@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css" /> 
+
+
+
+
+
+  </head> 
+  <header class = "header-class"> 
+    <h1> About </h1> </header>
+
+
+  <main>
+
+    <div class = "picture-class"><img width="400px" src="shetland_doggo.jpg" alt="shelty" /></div>
+<div class = "centered-text"> 
+    <h2 class="about-text"> Education</h2>
+     <p class="about-text"> I graduated from a high school in California. I am a CS major at BYU. I have a bit of coding experience because of this. 
+         Currently I am taking ITC 101 to pursue an interest in cybersecurity. I am also
+        considering swapping majors to the cybersecurity field. In addition I am working to obtain more knowledge with certifications. 
+      </p> 
+    </div>
+<div class = "centered-text">
+    <h2 class="about-text"> Hobbies</h2>
+    <p class="about-text"> I enjoy doing things like programming and researching projects. I also enjoy sewing projects. Although as of late
+        I have lacked the time to do a lot of those. I enjoy playing video games and reading books as well. Sometimes I also
+    like to watch a good movie or a TV show.   </p>
+</div>
+<div class = "centered-text">
+    <h2 class="about-text"> Achievements</h2>
+    <p class="about-text"> I have a few achievements that I am quite proud of. Some of these include making my own website, getting the Eagle Scout award,
+        and even getting into BYU. I also have some coding projects that I am quite proud of. Such as
+        building a webscraper. There are also some general achievements that I'm happy with too. Like graduating high school
+    and being able to live on my own (harder than I thought it would be).   </p>
+</div>
+    
+</main>
+<div class = "style-button">
+    <button class = "button-color" id = "buttonID" onclick = "textbutton()"> Click this to toggle button color</button>
+</div>
+   
+    <script>
+      let istrue = true
+      function textbutton(){
+         let button = document.getElementById("buttonID")
+        istrue = !istrue;
+        if (istrue){
+          button.classList.remove("button-color")
+          button.classList.add("other-button-color")
+
+        }
+        if (!istrue){
+
+         button.classList.remove("other-button-color")
+          button.classList.add("button-color") 
+      }
+
+    } 
+</script>
+
+      
+
+
+  <footer class= "footer-class"> <a href="https://github.com/RyanITC695/ITC_HTML_LAB">the git hub</a>  </footer>
